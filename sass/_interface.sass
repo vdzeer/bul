@@ -1,0 +1,31 @@
+*
+    box-sizing: border-box
+    
+body
+    +reg
+    color: $text-color
+    font-size: 14px
+    
+img
+    max-width: 100%
+
+.container
+    width: 1170px
+    margin: auto
+
+@media (max-width: 1200px)
+    .container
+        width: 750px
+
+.button
+    border: none
+    border-radius: 10px
+    background-color: $btn-color
+    &:hover
+        background-color: lighten($btn-color, 10%)
+        cursor: pointer
+    &:focus
+        outline: none
+
+section
+    padding: 80px 0

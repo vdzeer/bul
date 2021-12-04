@@ -1,0 +1,80 @@
+.main
+    background: center / cover no-repeat url('/img/bg-1.jpg')
+    &-heading
+        display: flex
+        justify-content: center
+        align-items: center
+        flex-direction: column
+    &__text
+        background-color: $orange
+        text-align: center
+        padding: 2px 5px
+        color: $white
+    &__header
+        font-size: 25px
+        margin: 0
+        margin-bottom: 10px
+    &__desc
+        font-size: 18px
+        font-weight: 600
+        margin: 0
+        margin-bottom: 10px
+    &-block
+        width: 100%
+        border-radius: 5px
+        background: $lightBlue
+        padding: 15px 20px
+        margin-bottom: 20px
+        border: 2px solid #fff
+        text-align: center
+        color: #FFF
+        display: flex
+        flex-direction: column
+        align-items: center
+        &__title
+            text-decoration: underline
+            font-size: 22px
+            color: $white
+            margin-bottom: 10px
+            &_bold
+                font-size: 22px
+                text-decoration: none
+                font-weight: 600
+                margin-bottom: 10px
+        &__desc
+            text-align: center
+            color: $white
+            font-size: 16px
+        &-inputs
+            display: flex
+            flex-direction: column
+            align-items: center
+            width: 80%
+            padding: 30px 0 20px 0
+            &__input
+                width: 100%
+                font-size: 16px
+                border-radius: 7px
+                background: #FFF
+                border: 1px solid #818a91
+                height: 47px
+                padding-left: 15px
+                padding-right: 15px
+                margin-bottom: 5px
+        &__button
+            display: inline-flex;
+            justify-content: center;
+            align-items: center;
+            width: auto;
+            cursor: pointer;
+            color: #FFF;
+            text-decoration: none;
+            text-align: center;
+            transition: .3s;
+            background: $orange;
+            border-radius: 7px;
+            font-weight: 600;
+            min-height: 47px;
+            padding: 15px 25px;
+            font-size: 18px;
+            border: none;

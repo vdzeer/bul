@@ -1,25 +1,16 @@
 .meating
-    width: 100wv
     border-top: thick double $blue
     border-bottom: thick double $blue
-
     display: flex
     justify-content: center
     align-items: center
     flex-direction: column
-    padding: 80px
-
     &__wrapper
-        max-width: 60% 
-        margin: auto
         display: flex
         flex-wrap: wrap
         justify-content: center
-
         &__item
-            width: 450px;
-            // height: 150px;
-
+            max-width: 450px;
             display: flex
             justify-content: space-between
             align-items: center
@@ -28,9 +19,8 @@
                 width: 80px;
                 height: 80px;
                 border-radius: 60px
+                margin-right: 20px
             &__text__wrapper
-                width: 75%;
-
                 display: flex
                 flex-direction: column
                 justify-content: space-evenly
@@ -40,28 +30,24 @@
                     font-size: 19px
                 &__description
                     font-size: 16px
-
     &__title
-        font-size: 30px
+        font-size: 24px
         font-weight: 500
         padding: 20px
-
+        text-align: center
+    &_bonusWrapper
+        text-align: center
     &__bonus
-        display: inline-flex;
-        justify-content: center;
-        align-items: center;
-        width: auto;
-        cursor: pointer;
-        color: #FFF;
-        text-decoration: none;
-        text-align: center;
-        transition: .3s;
-        background: $orange;
-        border-radius: 7px;
-        font-weight: 600;
-        min-height: 47px;
-        padding: 15px 25px;
-        font-size: 18px;
-        border: none;
- 
-    
+        cursor: pointer
+        color: #FFF
+        text-decoration: none
+        text-align: center
+        transition: .3s
+        background: $orange
+        border-radius: 7px
+        font-weight: 600
+        min-height: 47px
+        padding: 15px 25px
+        font-size: 18px
+        border: none
+        margin: auto

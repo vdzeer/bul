@@ -163,15 +163,16 @@
       <div class="container">
         <p class="meating__title">Ну что, Давайте знакомиться?)</p>
 
-        <iframe
-          height="160"
-          class="block_video"
-          src="https://www.youtube.com/embed/cxU8EpG9_Sw"
-          title="YouTube video player"
-          frameborder="0"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-          allowfullscreen
-        ></iframe>
+        <div class="block_video_wrapper">
+          <iframe
+            class="block_video"
+            src="https://www.youtube.com/embed/cxU8EpG9_Sw"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen
+          ></iframe>
+        </div>
 
         <p class="meating__title">
           Почему более 80 000 клиентов выбирают BulBul?)
@@ -280,19 +281,19 @@
         </div>
 
         <div class="mp_element">
-          <div class="mp_title"><span>Моечка 790х500х230 мм</span></div>
-          <p class="mp_price">цена от <span>3450 грн</span></p>
+          <div class="mp_title"><span>Моечка 780х500х200 мм</span></div>
+          <p class="mp_price">цена от <span>3500 грн</span></p>
           <div class="mp_img">
-            <img src="/img/img_3.jpg" alt="Моечка 790х500х230 мм" />
+            <img src="/img/img_4.jpg" alt="Моечка 780х500х200 мм" />
           </div>
           <a href="#order" class="mp_btn">Узнать цену Вашего комплекта!</a>
         </div>
 
         <div class="mp_element">
-          <div class="mp_title"><span>Моечка 780х500х200 мм</span></div>
-          <p class="mp_price">цена от <span>3500 грн</span></p>
+          <div class="mp_title"><span>Моечка 790х500х230 мм</span></div>
+          <p class="mp_price">цена от <span>3450 грн</span></p>
           <div class="mp_img">
-            <img src="/img/img_4.jpg" alt="Моечка 780х500х200 мм" />
+            <img src="/img/img_3.jpg" alt="Моечка 790х500х230 мм" />
           </div>
           <a href="#order" class="mp_btn">Узнать цену Вашего комплекта!</a>
         </div>
@@ -304,13 +305,15 @@
             <img src="/img/img_5.jpg" alt="Моечка 850х510х230 мм" />
           </div>
           <a href="#order" class="mp_btn">Узнать цену Вашего комплекта!</a>
-          <a
-            href="https://bulbulstore.com.ua/category.php?type=sinks"
-            class="mp_btn mp_more"
-            >Больше моечек!</a
-          >
         </div>
       </section>
+      <div class="mp_more_div">
+        <a
+          href="https://bulbulstore.com.ua/category.php?type=sinks"
+          class="mp_btn mp_more"
+          >Больше моечек!</a
+        >
+      </div>
     </div>
 
     <section class="cb">
@@ -329,7 +332,7 @@
             />
           </div>
 
-          <button class="main-block__button">Рассчитать!</button>
+          <button class="main-block__button cb_input">Рассчитать!</button>
         </div>
       </div>
     </section>
@@ -346,36 +349,39 @@
           Это я думаю Вы видели наглядно в моих КРАШ-ТЕСТАХ, если нет, то
           ОБЯЗАТЕЛЬНО их посмотрите
         </p>
-
-        <iframe
-          src="https://www.youtube.com/embed/f14UD6XcYb8"
-          title="YouTube video player"
-          frameborder="0"
-          height="160"
-          class="block_video"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-          allowfullscreen
-        ></iframe>
-
-        <iframe
-          src="https://www.youtube.com/embed/31JR3ffdzAE"
-          title="YouTube video player"
-          frameborder="0"
-          height="160"
-          class="block_video"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-          allowfullscreen
-        ></iframe>
-
-        <iframe
-          src="https://www.youtube.com/embed/n6oT68WTDdg"
-          title="YouTube video player"
-          frameborder="0"
-          height="160"
-          class="block_video"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-          allowfullscreen
-        ></iframe>
+        <div class="block_video_wrapper">
+          <iframe
+            src="https://www.youtube.com/embed/f14UD6XcYb8"
+            title="YouTube video player"
+            frameborder="0"
+            height="160"
+            class="block_video"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen
+          ></iframe>
+        </div>
+        <div class="block_video_wrapper">
+          <iframe
+            src="https://www.youtube.com/embed/31JR3ffdzAE"
+            title="YouTube video player"
+            frameborder="0"
+            height="160"
+            class="block_video"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen
+          ></iframe>
+        </div>
+        <div class="block_video_wrapper">
+          <iframe
+            src="https://www.youtube.com/embed/n6oT68WTDdg"
+            title="YouTube video player"
+            frameborder="0"
+            height="160"
+            class="block_video"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen
+          ></iframe>
+        </div>
       </section>
     </div>
 
@@ -384,24 +390,24 @@
         <div class="block_title">
           Более 2000 Фото и видео Отзывов от клиентов
         </div>
-
-        <div class="block_img">
-          <img src="/img/carousel_1.jpg" />
+        <div class="block_wrapper">
+          <div class="block_img">
+            <img src="/img/carousel_1.jpg" />
+          </div>
+          <div class="block_img">
+            <img src="/img/carousel_2.jpg" />
+          </div>
+          <div class="block_img">
+            <img src="/img/carousel_3.jpg" />
+          </div>
+          <div class="block_img">
+            <img src="/img/carousel_4.jpg" />
+          </div>
+          <div class="block_img">
+            <img src="/img/carousel_5.jpg" />
+          </div>
         </div>
-        <div class="block_img">
-          <img src="/img/carousel_2.jpg" />
-        </div>
-        <div class="block_img">
-          <img src="/img/carousel_3.jpg" />
-        </div>
-        <div class="block_img">
-          <img src="/img/carousel_4.jpg" />
-        </div>
-        <div class="block_img">
-          <img src="/img/carousel_5.jpg" />
-        </div>
-
-        <a href="#order">
+        <a href="#order" class="block_href">
           <button class="main-block__button" style="margin-top: 10px">
             Закончить выбор лучшей моечки для Вас
           </button>

@@ -138,9 +138,11 @@ a {
 
 .main-block {
   width: 100%;
+  max-width: 600px;
   border-radius: 5px;
   background: #027ec5ce;
   padding: 15px 20px;
+  margin: auto;
   margin-bottom: 20px;
   border: 2px solid #fff;
   text-align: center;
@@ -402,8 +404,13 @@ a {
 
 .mp_more {
   background: #027ec5ce !important;
-  margin-top: 10px;
   min-height: 27px !important;
+}
+
+.mp_more_div {
+  margin: auto;
+  text-align: center;
+  margin-bottom: 20px;
 }
 
 .mp_btn {
@@ -464,6 +471,11 @@ a {
           justify-content: center;
 }
 
+.block_video_wrapper {
+  text-align: center;
+  width: 100%;
+}
+
 .block_title {
   text-align: center;
   width: 90%;
@@ -501,5 +513,79 @@ a {
 .block_arrow {
   color: black;
   font-size: 14px;
+}
+
+@media (min-width: 550px) {
+  .block_video {
+    text-align: center;
+    height: 400px;
+    width: 60%;
+  }
+  .mp {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: space-beetwen;
+        -ms-flex-pack: space-beetwen;
+            justify-content: space-beetwen;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .mp_element {
+    width: 400px;
+    min-height: 400px;
+  }
+  .mp_title {
+    width: -webkit-max-content;
+    width: -moz-max-content;
+    width: max-content;
+  }
+  .mp_btn {
+    width: -webkit-max-content;
+    width: -moz-max-content;
+    width: max-content;
+    min-height: 37px;
+  }
+  .mp_img {
+    width: 80%;
+  }
+  .mp_more_div {
+    margin-bottom: 40px;
+  }
+  .cb_input {
+    width: 40% !important;
+    margin: auto;
+  }
+  .block_wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .block_img {
+    width: 350px;
+  }
+  .block_href {
+    width: 400px;
+    margin: auto;
+  }
 }
 /*# sourceMappingURL=style.css.map */

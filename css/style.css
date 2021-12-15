@@ -51,6 +51,27 @@ a {
   align-items: center;
 }
 
+.header_links {
+  max-width: 25%;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.header_link {
+  color: black !important;
+  font-size: 18px;
+  text-decoration: underline;
+}
+
+.header_link:visited {
+  color: black !important;
+}
+
 .header-wrapper {
   display: -webkit-box;
   display: -ms-flexbox;

@@ -84,11 +84,21 @@
     <link rel="stylesheet" href="css/normalize.css" />
     <link rel="stylesheet" href="css/animate.css" />
     <link rel="stylesheet" href="css/style.css" />
+
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script src="index.js"></script>
   </head>
   <body>
     <div class="container">
       <header class="header">
         <img src="img/logo.png" class="header__logo" />
+
+        <div class="header_links">
+          <a class="header_link" href="#crash">Краш-тесты</a>
+          <a class="header_link" href="#mp">Цены</a>
+          <a class="header_link" href="#feed">Отзывы</a>
+        </div>
+
         <div class="header-wrapper">
           <a href="tel:+380666053892">
             <div class="header-wrapper__number">066 605 38 92</div></a
@@ -121,19 +131,23 @@
           <div class="main-block-inputs">
             <input
               type="text"
+              id="inputName"
               class="main-block-inputs__input"
               placeholder="Как вас зовут?"
             />
 
             <input
-              type="text"
+              type="number"
+              id="inputPhone1"
               class="main-block-inputs__input"
               placeholder="Введите ваш номер*"
               required
             />
           </div>
 
-          <button class="main-block__button">Хочу выгодную цену!</button>
+          <button class="main-block__button" onclick="sendEmail()">
+            Хочу выгодную цену!
+          </button>
         </div>
 
         <div class="main-block">
@@ -308,7 +322,7 @@
       </div>
     </section>
 
-    <div class="container">
+    <div class="container" id="mp">
       <section class="mp">
         <div class="mp_element">
           <div class="mp_title"><span>Моечка 560х500х200 мм</span></div>
@@ -373,24 +387,71 @@
 
           <div class="main-block-inputs cb_input">
             <input
-              type="text"
+              type="number"
+              id="inputPhone2"
+              pattern="0-9"
               class="main-block-inputs__input"
               placeholder="Введите ваш номер*"
               required
             />
           </div>
 
-          <button class="main-block__button cb_input">Рассчитать!</button>
+          <button class="main-block__button cb_input" onclick="sendEmail">
+            Рассчитать!
+          </button>
         </div>
       </div>
     </section>
 
-    <div class="container">
+    <div class="container" id="crash">
       <section class="block">
         <p class="meating__title">Отзывы о нас</p>
 
-        <div class="block_title">
+    <div class="container" style="border-top: 1px solid #027ec5ce" id="feed">
+      <section class="block">
+        <div class="block_title">Как мы работаем?</div>
+        <div class="block_desc">Производство Гранитных Моечек BulBul</div>
+        <!-- <div class="block_video_wrapper">
+          <iframe
+            src="https://www.youtube.com/embed/j20-TANfmCE"
+            title="YouTube video player"
+            frameborder="0"
+            height="160"
+            class="block_video"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen
+          ></iframe>
+        </div> -->
+        <div class="block_wrapper">
+          <div class="block_img">
+            <img src="/img/carousel1_1.jpg" />
+          </div>
+          <div class="block_img">
+            <img src="/img/carousel1_2.jpg" />
+          </div>
+          <div class="block_img">
+            <img src="/img/carousel1_3.jpg" />
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <div class="container" style="border-top: 1px solid #027ec5ce" id="feed">
+      <section class="block">
+        <div class="block_title">Отзывы о нас</div>
+        <div class="block_desc">
           Более 2000 Фото и Видео-Отзывов довольных Клиентов ❤️
+        </div>
+        <div class="block_video_wrapper">
+          <iframe
+            src="https://www.youtube.com/embed/j20-TANfmCE"
+            title="YouTube video player"
+            frameborder="0"
+            height="160"
+            class="block_video"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen
+          ></iframe>
         </div>
         <div class="block_wrapper">
           <div class="block_img">
@@ -409,7 +470,7 @@
             <img src="/img/carousel_5.jpg" />
           </div>
         </div>
-        <a href="#order" class="block_href">
+        <a href="#mp" class="block_href">
           <button class="main-block__button" style="margin-top: 10px">
             Выбрать Лучшую кухонную Моечку❤️ Клик!
           </button>

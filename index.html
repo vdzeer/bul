@@ -84,6 +84,9 @@
     <link rel="stylesheet" href="css/normalize.css" />
     <link rel="stylesheet" href="css/animate.css" />
     <link rel="stylesheet" href="css/style.css" />
+
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script src="index.js"></script>
   </head>
   <body>
     <div class="container">
@@ -120,19 +123,23 @@
           <div class="main-block-inputs">
             <input
               type="text"
+              id="inputName"
               class="main-block-inputs__input"
               placeholder="Как вас зовут?"
             />
 
             <input
-              type="text"
+              type="number"
+              id="inputPhone1"
               class="main-block-inputs__input"
               placeholder="Введите ваш номер*"
               required
             />
           </div>
 
-          <button class="main-block__button">Хочу выгодную цену!</button>
+          <button class="main-block__button" onclick="sendEmail()">
+            Хочу выгодную цену!
+          </button>
         </div>
 
         <div class="main-block">
@@ -325,14 +332,18 @@
 
           <div class="main-block-inputs cb_input">
             <input
-              type="text"
+              type="number"
+              id="inputPhone2"
+              pattern="0-9"
               class="main-block-inputs__input"
               placeholder="Введите ваш номер*"
               required
             />
           </div>
 
-          <button class="main-block__button cb_input">Рассчитать!</button>
+          <button class="main-block__button cb_input" onclick="sendEmail">
+            Рассчитать!
+          </button>
         </div>
       </div>
     </section>

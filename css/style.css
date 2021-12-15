@@ -54,12 +54,10 @@ a {
 .header_links {
   max-width: 25%;
   width: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  display: none;
   -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
 }
 
 .header_link {
@@ -301,7 +299,6 @@ a {
   height: 80px;
   border-radius: 60px;
   margin-right: 20px;
-  object-fit: contain;
 }
 
 .meating__wrapper__item__text__wrapper {
@@ -520,16 +517,11 @@ a {
 
 .block_img {
   padding: 20px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
 }
 
 .block_img img {
   width: 80%;
+  height: fit-content;
 }
 
 .block_arrow {
@@ -608,6 +600,14 @@ a {
   .block_href {
     width: 400px;
     margin: auto;
+  }
+}
+
+@media (min-width: 1000px) {
+  .header_links {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
   }
 }
 /*# sourceMappingURL=style.css.map */

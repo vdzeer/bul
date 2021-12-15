@@ -518,20 +518,6 @@ a {
 .block_img {
   padding: 20px;
   width: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: stretch;
-      -ms-flex-align: stretch;
-          align-items: stretch;
-}
-
-.block_img img {
-  width: 100%;
-  height: auto;
 }
 
 .block_arrow {
